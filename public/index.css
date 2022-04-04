@@ -1,0 +1,49 @@
+body {
+    font-size: bold;
+}
+
+#price-boxchart-div {
+    padding: 20px;
+    text-align: center;
+}
+
+#worldmap-div {
+    padding: 20px;
+    text-align: center;
+}
+
+#circular-div {
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.select-div {
+    width: 300px;
+    /* margin: auto; */
+}
+
+#stack-barchart-div {
+    padding: 20px;
+    text-align: center;
+}
+
+#country-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* padding: 20px; */
+    text-align: center;
+    justify-content: center;
+}
+
+#my-header-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://github.com/chintseng/my_csv_file/blob/master/crystalweed-cannabis-nFumIdf3IHE-unsplash.jpg?raw=true');
+    /* height: 50%; */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

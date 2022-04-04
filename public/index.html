@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>Marijuana Study</title>
+        <link rel="shortcut icon" href="asset/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+        <link href="./index.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light shadow fixed-to navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="index.html" style="font-family: 'Supermercado One', cursive;">Assignment 2 - Storytelling Remixed</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                  <li class="navbar-brand" style="padding-left: 5px;">
+                    <a class="navbar-brand" target="_blank" href="https://github.com/VisDesignStudies/module-two-storytelling-remixed-chintseng">
+                        <img src="/asset/image/github.png" width="30" height="30" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <header class="masthead">
+            <div class="container h-100" id="my-header-div">
+              <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                  <h1 class="fw-light" style="color:#E0E0E0; font-family: 'Lobster', cursive; font-size: 60px;">More And More Americans Are Smoking Pot. <br/> What Does That Mean For Their Health?</h1>
+                  <p class="lead" style="color:#E0E0E0; font-family: 'EB Garamond', serif; font-size: 20px;">Storytelling Visualizations for Marijuana Studies.</p>
+                </div>
+              </div>
+            </div>
+          </header>
+
+        <div class="container" style="margin-top: 25px;">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto" style="width: 70%;">
+                  <h2>More And More Americans Are Smoking Pot. <br/> What Does That Mean For Their Health?</h2>
+                  <a href="https://fivethirtyeight.com/features/more-and-more-americans-are-smoking-pot-what-does-that-mean-for-their-health/" target="_blank">
+                   --- Article from FiveThirtyEight 
+                </a>
+                </div>
+            </div>
+            <hr/>
+
+
+            <div class="row justify-content-center">
+              <div class="col-md-auto" style="width: 70%;">
+                <p data-paragraph="main" style="font-family: 'Playfair Display', serif;">Not so long ago, pot was made out to be a taboo “<a href="https://www.nytimes.com/roomfordebate/2016/04/26/is-marijuana-a-gateway-drug/marijuana-has-proven-to-be-a-gateway-drug" target="_blank" rel="noopener">gateway drug</a>” that would <a href="https://abcnews.go.com/Health/Healthday/story?id=4508121&amp;page=1" target="_blank" rel="noopener">tar your lungs</a> and damage <a href="https://www.huffpost.com/entry/mitch-mcconnell-legalizing-weed-causes-death_n_1344572" target="_blank" rel="noopener">your brain forever</a>. But pot isn’t taboo anymore. <a href="https://www.businessinsider.com/legal-marijuana-states-2018-1" target="_blank" rel="noopener">Eighteen</a> states and Washington, D.C., have legalized it, and more American adults are using the drug than any time since Ronald Reagan was president.&nbsp;</p>
+              </div>
+            </div>
+            <div id="country-div">
+                <div id="worldmap-div">
+                  <h5>Marijuana Policy by State</h5>
+                  <h6 style="font-family: 'Playfair Display', serif; font-style: italic;"><a href="https://marijuana.procon.org/legal-recreational-marijuana-states-and-dc/">Data Source: PROCON.ORG</a></h6>
+                    <svg id="my_dataviz" width="1000" height="600"></svg>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-auto" style="width: 70%;">
+                <p style="font-family: 'Playfair Display', serif;">New York, Virginia and New Mexico all passed legislation in 2021 legalizing marijuana, bringing the total number of states where recreational consumption is legal up to 17, along with Washington, D.C. At the federal level, the House of Representatives passed a bill this week which allows banks to conduct business with cannabis-related companies in states where marijuana has been legalized, with the support of about half of the chamber’s Republicans and almost all of its Democrats; the bill now awaits its fate in the Senate.2 Before it was passed, Senate Majority Leader Chuck Schumer told Politico he wants to tackle the House bill but wants to “figure out the right way to do that.” He has been working on comprehensive legislation to end the federal ban on the drug independent of President Biden, who has indicated that he may not be on board.</p>
+                <p style="font-family: 'Playfair Display', serif;">But even if Biden may not be ready to pivot on marijuana legalization just yet (decriminalization, not legalization for recreational use, was part of his campaign platform), the polling on the issue has been loud and clear: People want weed to be legal.</p>
+              </div>
+            </div>
+            
+            <div id="country-div">
+              <div id="support-line-chart" width="500" height="300" style="margin-bottom: 50px;">
+                <h5>The climb towards marijuana legalization (support rate)</h5>
+                <h6 style="font-family: 'Playfair Display', serif; font-style: italic;"><a href="https://www.statista.com/statistics/935349/us-support-for-legal-marijuana-since-2000-by-political-party/">Data Source: Statista</a></h6>
+
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-md-auto" style="width: 70%;">
+                <p data-paragraph="main"  style="font-family: 'Playfair Display', serif;">And just as the legality and culture around pot has changed, so has some of the science. Epidemiologists are still alarmed at just how many Americans are smoking pot, but they admit that pot isn’t the health menace we were once told it was — and there’s some evidence that a little bit of pot could be a good thing for adults.</p>
+                <p data-paragraph="main"  style="font-family: 'Playfair Display', serif;">Pot use has soared among Americans over the age of 26 — <a href="https://www.samhsa.gov/data/sites/default/files/reports/rpt35323/NSDUHDetailedTabs2020/NSDUHDetailedTabs2020/NSDUHDetTabsSect7pe2020.htm" target="_blank" rel="noopener">over 10 percent</a> of them reported getting high in a given month in 2020, according to the <a href="https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health" target="_blank" rel="noopener noreferrer">National Survey on Drug Use and Health</a> (NSDUH), the country’s <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/add.15562" target="_blank" rel="noopener">largest survey</a> on drug use. That’s more than double the rate of monthly use reported in 2010.&nbsp;</p>
+              </div>
+            </div>
+
+
+
+            
+            <div class="row justify-content-md-center">
+              <div  style="width: 70%; padding-bottom: 5px;">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="use-pot-time" id="inlineRadio1" value="lifetime" checked>
+                  <label class="form-check-label" for="inlineRadio1">Lifetime</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="use-pot-time" id="inlineRadio2" value="past_year">
+                  <label class="form-check-label" for="inlineRadio2">Past Year</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="use-pot-time" id="inlineRadio3" value="past_month">
+                  <label class="form-check-label" for="inlineRadio3">Past Month</label>
+                </div>
+              </div>
+            </div>
+
+
+
+
+        
+        <div id="country-div">
+          <div id="usage-bar-chart" width="500" height="300">
+            <h5>People Aged 12 or Older; Used Marijuana</h5>
+            <h6 style="font-family: 'Playfair Display', serif; font-style: italic;"><a href="https://www.samhsa.gov/data/release/2020-national-survey-drug-use-and-health-nsduh-releases">Data Source: NSDUH</a></h6>
+
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-auto" style="width: 70%;">
+            <p data-paragraph="main" style="font-family: 'Playfair Display', serif;">But what are the actual dangers of using cannabis? To help you decide whether to load another bowl or put the bong down for good, we’ve summarized the latest science on marijuana’s health risks; the areas where there’s an absence of evidence that pot is risky (think: lung cancer); and, finally, the surprising reason why the director of the the federal agency in charge of studying how drugs are bad thinks adults could possibly benefit from using cannabis.</p>
+            <h4 style="font-family: 'Playfair Display', serif;">The risks are real</h4>
+            <p data-paragraph="main" style="font-family: 'Playfair Display', serif;">Many of pot’s effects are tangled in contradictory research, but there are a few clear health risks to consuming the drug. Smoking cannabis regularly can <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/add.15075" target="_blank" rel="noopener">cause</a> bronchitis-like symptoms, and research <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258434" target="_blank" rel="noopener">published last month</a> found that chronic cannabis users, defined as people who used pot at least four times a week for more than three years, had impaired pancreatic function. There have also been <a href="https://www.cureus.com/articles/19344-a-rare-case-of-cannabis-induced-acute-pancreatitis" target="_blank" rel="noopener">cases</a> of daily cannabis users developing pancreatitis without having any other obvious risk factors.</p>
+            <p data-paragraph="main" style="font-family: 'Playfair Display', serif;">Regular pot use has also been associated with higher rates of depression, anxiety and poorer life outcomes like being unemployed, but causality <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4827335/" target="_blank" rel="noopener">has not been established</a> because other factors could predispose someone both to using cannabis and having a mental illness or not having a job.</p>
+            <p data-paragraph="main" style="font-family: 'Playfair Display', serif;">There’s also evidence that cannabis can be dangerous when used in certain situations, like during pregnancy or while driving a vehicle. A <a href="https://bmccancer.biomedcentral.com/articles/10.1186/s12885-021-08598-7" target="_blank" rel="noopener">recent study</a> linked increasing rates of childhood leukemia to an increase in cannabis use, and <a href="https://www.pnas.org/content/118/47/e2106115118" target="_blank" rel="noopener">a separate study</a> found a correlation between women using cannabis while pregnant and their children having higher rates of anxiety. There’s also evidence that using pot while pregnant can lead to lower birth weights, although that evidence is still <a href="https://jamanetwork.com/journals/jama/article-abstract/2594400" target="_blank" rel="noopener">considered</a> limited. And driving a car while high has been shown to <a href="https://pubmed.ncbi.nlm.nih.gov/26878835/" target="_blank" rel="noopener">moderately increase</a> the risk of getting into a motor vehicle accident.</p>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div  style="width: 70%; padding-bottom: 5px;">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="mental-pie-radio" id="inlineRadio1" value="2019" checked>
+              <label class="form-check-label" for="inlineRadio1">2019</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="mental-pie-radio" id="inlineRadio2" value="2020">
+              <label class="form-check-label" for="inlineRadio2">2020</label>
+            </div>
+            <h6 style="font-family: 'Playfair Display', serif; font-style: italic;"><a href="https://www.samhsa.gov/data/release/2020-national-survey-drug-use-and-health-nsduh-releases">Data Source: NSDUH</a></h6>
+
+          </div>
+        </div>
+      <div id="country-div">
+        <div id="mental-pie-2" width="500" height="300">
+          <h5>People Aged 18 or Older <br/>-</h5>
+        </div>
+          <div id="mental-pie" width="500" height="300">
+            <h5>People Aged 18 or Older;<br/> Past Year used marijuana</h5>
+          </div>
+
+        </div> 
+
+        <div class="row justify-content-center">
+          <div class="col-md-auto" style="width: 70%;">
+            <p style="font-family: 'Playfair Display', serif;">Deborah Hasin, an epidemiologist at Columbia University, said she is very concerned about adults’ increasing use of cannabis because CUD is associated with poorer quality of life, cognitive decline and impaired educational and occupational employment. Hasin’s research has found that 19.5 percent of people who use cannabis met the criteria of CUD in their lifetimes.
+
+              “It’s clear that not everybody who smokes marijuana has all of these problems, but the risk is there, and it’s a greater risk than people assume,” Hasin said.
+              
+              Using cannabis frequently increases the risks of developing CUD, and frequent pot use is growing among adults. Monthly use for 26-to-34-year-olds has more than doubled since 2008, and the share of people getting at least five days a week increased from 5.8 to 13.8 percent between 2008 and 2019, according to NSDUH survey results.</p>
+
+            </div>
+        </div>
+
+
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="module" src="./useTrendBarChart.js" ></script>
+        <script type="module" src="./supportLineChart.js" ></script>
+        <script type="module" src="./statesMap.js" ></script>
+        <script type="module" src="./mentalPie.js" ></script>
+        <script type="module" src="./mentalPie2.js" ></script>
+    </body>
+</html>
