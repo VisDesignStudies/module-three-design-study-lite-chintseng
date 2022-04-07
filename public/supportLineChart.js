@@ -1,5 +1,5 @@
-const margin = {top: 10, right: 60, bottom: 30, left: 60},
-    width = 660 - margin.left - margin.right,
+const margin = {top: 10, right: 100, bottom: 30, left: 60},
+    width = 1460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -11,16 +11,16 @@ const svg = d3.select("#support-line-chart")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/chintseng/my_csv_file/master/support_rate.csv").then(function (data) {
+d3.csv("https://raw.githubusercontent.com/chintseng/my_csv_file/master/enrgy_data/Commercial%20Sector%20Energy%20Price%20and%20Expenditure%20Estimates%2C%201970-2019.csv").then(function (data) {
   // List of groups (here I have one group per column)
-  const allGroup = ["age_18_34", "age_35_54", "age_55_older"]
+  const allGroup = ['Prices in Dollars per Million Btu.Primary Energy.Coal', 'Prices in Dollars per Million Btu.Primary Energy.NaturalGas', 'Prices in Dollars per Million Btu.Primary Energy. DistillateFuelOil']
 
   // Reformat the data: we need an array of arrays of {x, y} tuples
   const dataReady = allGroup.map( function(grpName) { // .map allows to do something for each element of the list
     return {
       name: grpName,
       values: data.map(function(d) {
-        return {time: d.year, value: +d[grpName]/100};
+        return {time: d.Year, value: +d[grpName]};
       })
     };
   });
@@ -28,7 +28,7 @@ d3.csv("https://raw.githubusercontent.com/chintseng/my_csv_file/master/support_r
   // console.log(dataReady)
 
   const x_year_array = data.map(function(d) {
-    return d.year
+    return d.Year
   })
 
   // A color scale: one color for each group
@@ -48,16 +48,29 @@ d3.csv("https://raw.githubusercontent.com/chintseng/my_csv_file/master/support_r
 
   // Add Y axis
   const y = d3.scaleLinear()
-    .domain( [0, 1])
+    .domain( [0, 30])
     .range([ height, 0 ]);
 
+  // svg.append("g")
+  //   .call(d3.axisLeft(y).tickFormat(d3.format(".0%")));
+
+
   svg.append("g")
-    .call(d3.axisLeft(y).tickFormat(d3.format(".0%")));
+  .call(d3.axisLeft(y));
 
   // Add the lines
   const line = d3.line()
     .x(d => x(d.time))
     .y(d => y(+d.value))
+
+    svg.append("text")
+    .attr("class", "y label")
+    .attr("text-anchor", "end")
+    .attr("y", 6)
+    .attr("dy", ".75em")
+    .attr("transform", "rotate(-90)")
+    .text("Prices in Dollars per Million Btu");
+
   svg.selectAll("myLines")
     .data(dataReady)
     .join("path")
@@ -81,7 +94,7 @@ d3.csv("https://raw.githubusercontent.com/chintseng/my_csv_file/master/support_r
     // Three function that change the tooltip when user hover / move / leave a cell
     var mouseover = function(event, d) {
       Tooltip
-          .html("Percentage: " +  d.value*100 + "%")
+          .html("Price: $" +  d.value)
           .style("opacity", 1)
     }
     var mousemove = function(event, d) {
@@ -114,7 +127,7 @@ d3.csv("https://raw.githubusercontent.com/chintseng/my_csv_file/master/support_r
       .on("mousemove", mousemove)
       .on("mouseleave", mouseleave)
 
-  const textMap = { "age_18_34": "Age 18-34", "age_35_54": "Age 35-54", "age_55_older": "Age 55 up" };
+  const textMap = { "Prices in Dollars per Million Btu.Primary Energy.Coal": "Caol", "Prices in Dollars per Million Btu.Primary Energy.NaturalGas": "NaturalGas", "Prices in Dollars per Million Btu.Primary Energy. DistillateFuelOil": "DistillateFuelOil" };
   // Add a legend at the end of each line
   svg
     .selectAll("myLabels")

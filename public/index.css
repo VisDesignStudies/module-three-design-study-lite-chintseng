@@ -37,7 +37,7 @@ body {
 }
 
 #my-header-div {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://github.com/chintseng/my_csv_file/blob/master/crystalweed-cannabis-nFumIdf3IHE-unsplash.jpg?raw=true');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://github.com/chintseng/my_csv_file/blob/master/cover.jpg?raw=true');
     /* height: 50%; */
     width: 100%;
     height: auto;
