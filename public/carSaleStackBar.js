@@ -153,14 +153,14 @@ function update(data) {
     .style("opacity", 1)
     
 }
-svg_pie.append("circle").attr("cx",-160).attr("cy", 160).attr("r", 6).style("fill", "#81D4FA")
-svg_pie.append("circle").attr("cx",-80).attr("cy",160).attr("r", 6).style("fill", "#03A9F4")
-svg_pie.append("circle").attr("cx",20).attr("cy", 160).attr("r", 6).style("fill", "#AED581")
-svg_pie.append("circle").attr("cx",70).attr("cy",160).attr("r", 6).style("fill", "#7CB342")
-svg_pie.append("text").attr("x", -150).attr("y", 160).text("Fuel Car").style("font-size", "15px").attr("alignment-baseline", "middle")
-svg_pie.append("text").attr("x", -70).attr("y", 160).text("Fuel SUV").style("font-size", "15px").attr("alignment-baseline","middle")
-svg_pie.append("text").attr("x", 30).attr("y", 160).text("EV").style("font-size", "15px").attr("alignment-baseline", "middle")
-svg_pie.append("text").attr("x", 80).attr("y", 160).text("EV SUV").style("font-size", "15px").attr("alignment-baseline","middle")
+svg_pie.append("circle").attr("cx",-150).attr("cy", 160).attr("r", 6).style("fill", "#81D4FA")
+svg_pie.append("circle").attr("cx",-60).attr("cy",160).attr("r", 6).style("fill", "#03A9F4")
+svg_pie.append("circle").attr("cx",35).attr("cy", 160).attr("r", 6).style("fill", "#AED581")
+svg_pie.append("circle").attr("cx",80).attr("cy",160).attr("r", 6).style("fill", "#7CB342")
+svg_pie.append("text").attr("x", -140).attr("y", 160).text("Fuel Car").style("font-size", "15px").attr("alignment-baseline", "middle")
+svg_pie.append("text").attr("x", -50).attr("y", 160).text("Fuel SUV").style("font-size", "15px").attr("alignment-baseline","middle")
+svg_pie.append("text").attr("x", 45).attr("y", 160).text("EV").style("font-size", "15px").attr("alignment-baseline", "middle")
+svg_pie.append("text").attr("x", 90).attr("y", 160).text("EV SUV").style("font-size", "15px").attr("alignment-baseline","middle")
 
 // Initialize the plot with the first dataset
 // update(data1)

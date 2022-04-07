@@ -49,7 +49,7 @@
         <div class="container" style="margin-top: 25px;">
             <div class="row justify-content-md-center">
                 <div class="col-md-auto" style="width: 70%;">
-                  <h2>### Title ###</h2>
+                  <h2>Design Study For Energy</h2>
                 </div>
             </div>
             <hr/>
@@ -58,9 +58,47 @@
             <div class="row justify-content-center">
               <div class="col-md-auto" style="width: 70%;">
                 <h4>Precondition</h4>
-                <p>1. Learning: Provide a brief background for your target problem. Make sure to describe the problem and why it matters. I encourage you to narrow down the problem scope more tightly than what's presented in the scenario, focusing on a specific line of policy and/or historical patterns (e.g., patterns in economic factors or data about coal usage). </p>
-                <p>2. Winnowing: Figure out what data you will use to explore the problem. You are welcome, but not required, to bring in data outside of the provided dataset. Make sure to talk about the background of the data (e.g., where does it come from, what bias might it have, etc) and why it's useful for your question. Note that you should explain the specific columns/dimensions of the dataset you plan to use and why these are necessary and sufficient to support your approach. </p>
+                <h6>1. Learning</h6>
+                <p>
+                  At the 2018 United Nations Climate Change Conference, 15 year old climate change activist Greta Thunberg sent shockwaves around the world through her striking and scathing speech criticising the leaders of the world for their inaction towards global warming. Although global warming has been increasingly calamitous for the past few decades, Thunberg’s speech pushed us to evaluate our carbon footprint. In contemporary society, energy consumption is integrated into every mechanism of our lives: transportation, shelter, communication, commerce, and more, are all heavily influenced by our demand for energy.
+                </p>
+                <p>
+                  In this study, we’ll be investigating one component of energy demand: transportation. This sector accounts for over 7 billion metric tons of CO2 emissions each year. To that end, the advent of electric modes of transportation over the last decade has challenged the foothold that conventional cars have in the energy sector. The dichotomy between EV’s and conventional cars is of great concern for how individuals directly drive global energy consumption.
+                </p>
+                <h6>2. Winnowing</h6>
+                <p>We consulted statistics from the CORGIS Dataset to understand the cost per kWH in the US on a state by state level. This informs us on the relative stability of electricity and the cost for EV users. In addition, we consulted outside sources such as the Department of Energy, the Environmental Protection Agency, and more to confer time series data about the price of gasoline over time, the average fuel economy of conventional vehicles, and other statistics inherent to conventional driving.</p>
                 <h4>Core</h4>
+                <h6>3. Discover:</h6>
+                <p>
+                  <ol>
+                    <li>Task 1
+                      <ul>
+                        <li>Why is a task pursued?</li>
+                        <ul>
+                          <li>To get a baseline about gas costs.</li>
+                        </ul>
+                        
+                        <li>What does a task seek to learn about the data?</li>
+                        <ul>
+                          <li>To understand the overarching landscape of gasoline since it’s a major component of the transportation sector and also has numerous flaws.
+                          </li>
+                        </ul>
+                        <li>Where does the task operate? </li>
+                        <ul>
+                          <li>Cost data over time in addition to historical records of price-changing events.</li>
+                        </ul>
+                        <li>When is the task performed?</li>
+                        <ul>
+                          <li>Beginning.</li>
+                        </ul>
+                        <li>Who is executing the task?</li>
+                    </ul>  </li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>
+                    <li>Task 4</li>
+                  </ol> 
+
+                </p>
                 <p>3. Discover: Characterize your problem by identifying at least two tasks that you will want to conduct with your data. Enumerate the tasks using the 5Ws framework that we talked about in-class (see Lecture 16). Make sure to outline the process by which you were able to generate these specific tasks.   </p>
                 <p>4. Design: Create a low-fidelity prototype of a visualization designed to address these tasks. Add brief design justifications and discussions of the trade-offs of key design choices in the prototype. Make sure to include an image of the prototype in your write-up (note: since this is a low-fi prototype, sketches lacking real data are perfectly sufficient). </p>
                 <p>5. Implement: Implement your design as a more polished digital or physical data representation. You can use any tool of your choosing, but if you elect to use a WYSIWYG tool like Tableau or Excel, please incorporate design choices beyond the defaults provided by the tool. Note how you've implemented your solution, justify the resulting design based on your tasks, research on the problem space, and any formative investigations (see the discussion of the presentation below), and include at least one image of the visualization using real data in the write-up. Note that you can choose to pare down the dataset for simplicity if you'd like.</p>
@@ -73,110 +111,6 @@
                 </p>
               </div>
             </div>
-
-            <!-- <div id="country-div">
-              <div id="support-line-chart" width="500" height="300" style="margin-bottom: 50px;">
-                <h5>Gasoline cost over time with current events</h5>
-              </div>
-            </div>
-
-            <div id="country-div">
-                <div id="worldmap-div">
-                  <h5>Gasoline cost over time with current events</h5>
-                    <svg id="my_dataviz" width="1000" height="600"></svg>
-                </div>
-            </div>
-
-
-            <div class="row justify-content-center">
-              <div class="col-md-auto" style="width: 70%;">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
-            </div>
-            
-
-
-            <div class="row justify-content-center">
-              <div class="col-md-auto" style="width: 70%;">
-                <p data-paragraph="main"  style="font-family: 'Playfair Display', serif;">And just as the legality and culture around pot has changed, so has some of the science. Epidemiologists are still alarmed at just how many Americans are smoking pot, but they admit that pot isn’t the health menace we were once told it was — and there’s some evidence that a little bit of pot could be a good thing for adults.</p>
-                <p data-paragraph="main"  style="font-family: 'Playfair Display', serif;">Pot use has soared among Americans over the age of 26 — <a href="https://www.samhsa.gov/data/sites/default/files/reports/rpt35323/NSDUHDetailedTabs2020/NSDUHDetailedTabs2020/NSDUHDetTabsSect7pe2020.htm" target="_blank" rel="noopener">over 10 percent</a> of them reported getting high in a given month in 2020, according to the <a href="https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health" target="_blank" rel="noopener noreferrer">National Survey on Drug Use and Health</a> (NSDUH), the country’s <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/add.15562" target="_blank" rel="noopener">largest survey</a> on drug use. That’s more than double the rate of monthly use reported in 2010.&nbsp;</p>
-              </div>
-            </div>
-
-
-
-            
-            <div class="row justify-content-md-center">
-              <div  style="width: 70%; padding-bottom: 5px;">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="use-pot-time" id="inlineRadio1" value="lifetime" checked>
-                  <label class="form-check-label" for="inlineRadio1">Lifetime</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="use-pot-time" id="inlineRadio2" value="past_year">
-                  <label class="form-check-label" for="inlineRadio2">Past Year</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="use-pot-time" id="inlineRadio3" value="past_month">
-                  <label class="form-check-label" for="inlineRadio3">Past Month</label>
-                </div>
-              </div>
-            </div>
-
-
-
-
-        
-        <div id="country-div">
-          <div id="usage-bar-chart" width="500" height="300">
-            <h5>People Aged 12 or Older; Used Marijuana</h5>
-            <h6 style="font-family: 'Playfair Display', serif; font-style: italic;"><a href="https://www.samhsa.gov/data/release/2020-national-survey-drug-use-and-health-nsduh-releases">Data Source: NSDUH</a></h6>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-md-auto" style="width: 70%;">
-            <p data-paragraph="main" style="font-family: 'Playfair Display', serif;">But what are the actual dangers of using cannabis? To help you decide whether to load another bowl or put the bong down for good, we’ve summarized the latest science on marijuana’s health risks; the areas where there’s an absence of evidence that pot is risky (think: lung cancer); and, finally, the surprising reason why the director of the the federal agency in charge of studying how drugs are bad thinks adults could possibly benefit from using cannabis.</p>
-            <h4 style="font-family: 'Playfair Display', serif;">The risks are real</h4>
-            <p data-paragraph="main" style="font-family: 'Playfair Display', serif;">Many of pot’s effects are tangled in contradictory research, but there are a few clear health risks to consuming the drug. Smoking cannabis regularly can <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/add.15075" target="_blank" rel="noopener">cause</a> bronchitis-like symptoms, and research <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0258434" target="_blank" rel="noopener">published last month</a> found that chronic cannabis users, defined as people who used pot at least four times a week for more than three years, had impaired pancreatic function. There have also been <a href="https://www.cureus.com/articles/19344-a-rare-case-of-cannabis-induced-acute-pancreatitis" target="_blank" rel="noopener">cases</a> of daily cannabis users developing pancreatitis without having any other obvious risk factors.</p>
-            <p data-paragraph="main" style="font-family: 'Playfair Display', serif;">Regular pot use has also been associated with higher rates of depression, anxiety and poorer life outcomes like being unemployed, but causality <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4827335/" target="_blank" rel="noopener">has not been established</a> because other factors could predispose someone both to using cannabis and having a mental illness or not having a job.</p>
-            <p data-paragraph="main" style="font-family: 'Playfair Display', serif;">There’s also evidence that cannabis can be dangerous when used in certain situations, like during pregnancy or while driving a vehicle. A <a href="https://bmccancer.biomedcentral.com/articles/10.1186/s12885-021-08598-7" target="_blank" rel="noopener">recent study</a> linked increasing rates of childhood leukemia to an increase in cannabis use, and <a href="https://www.pnas.org/content/118/47/e2106115118" target="_blank" rel="noopener">a separate study</a> found a correlation between women using cannabis while pregnant and their children having higher rates of anxiety. There’s also evidence that using pot while pregnant can lead to lower birth weights, although that evidence is still <a href="https://jamanetwork.com/journals/jama/article-abstract/2594400" target="_blank" rel="noopener">considered</a> limited. And driving a car while high has been shown to <a href="https://pubmed.ncbi.nlm.nih.gov/26878835/" target="_blank" rel="noopener">moderately increase</a> the risk of getting into a motor vehicle accident.</p>
-          </div>
-        </div>
-        <div class="row justify-content-md-center">
-          <div  style="width: 70%; padding-bottom: 5px;">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="mental-pie-radio" id="inlineRadio1" value="2019" checked>
-              <label class="form-check-label" for="inlineRadio1">2019</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="mental-pie-radio" id="inlineRadio2" value="2020">
-              <label class="form-check-label" for="inlineRadio2">2020</label>
-            </div>
-            <h6 style="font-family: 'Playfair Display', serif; font-style: italic;"><a href="https://www.samhsa.gov/data/release/2020-national-survey-drug-use-and-health-nsduh-releases">Data Source: NSDUH</a></h6>
-
-          </div>
-        </div>
-      <div id="country-div">
-        <div id="mental-pie-2" width="500" height="300">
-          <h5>People Aged 18 or Older <br/>-</h5>
-        </div>
-          <div id="mental-pie" width="500" height="300">
-            <h5>People Aged 18 or Older;<br/> Past Year used marijuana</h5>
-          </div>
-
-        </div> 
-
-        <div class="row justify-content-center">
-          <div class="col-md-auto" style="width: 70%;">
-            <p style="font-family: 'Playfair Display', serif;">Deborah Hasin, an epidemiologist at Columbia University, said she is very concerned about adults’ increasing use of cannabis because CUD is associated with poorer quality of life, cognitive decline and impaired educational and occupational employment. Hasin’s research has found that 19.5 percent of people who use cannabis met the criteria of CUD in their lifetimes.
-
-              “It’s clear that not everybody who smokes marijuana has all of these problems, but the risk is there, and it’s a greater risk than people assume,” Hasin said.
-              
-              Using cannabis frequently increases the risks of developing CUD, and frequent pot use is growing among adults. Monthly use for 26-to-34-year-olds has more than doubled since 2008, and the share of people getting at least five days a week increased from 5.8 to 13.8 percent between 2008 and 2019, according to NSDUH survey results.</p>
-
-            </div>
-        </div> -->
 
 
         <script src="https://d3js.org/d3.v7.min.js"></script>
