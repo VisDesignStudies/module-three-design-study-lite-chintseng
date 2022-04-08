@@ -1,10 +1,10 @@
 # Design study for energy
 
 ## Precondition
- - **Learning**
+ 1. **Learning**
 At the 2018 United Nations Climate Change Conference, 15 year old climate change activist Greta Thunberg sent shockwaves around the world through her striking and scathing speech criticising the leaders of the world for their inaction towards global warming. Although global warming has been increasingly calamitous for the past few decades, Thunberg’s speech pushed us to evaluate our carbon footprint. In contemporary society, energy consumption is integrated into every mechanism of our lives: transportation, shelter, communication, commerce, and more, are all heavily influenced by our demand for energy.
 In this study, we’ll be investigating one component of energy demand: transportation. This sector accounts for over 7 billion metric tons of CO2 emissions each year. To that end, the advent of electric modes of transportation over the last decade has challenged the foothold that conventional cars have in the energy sector. The dichotomy between EV’s and conventional cars is of great concern for how individuals directly drive global energy consumption.
- - **Winnowing**
+ 2. **Winnowing**
  We consulted statistics from the CORGIS Dataset to understand the cost per kWH in the US on a state by state level. This informs us on the relative stability of electricity and the cost for EV users. In addition, we consulted outside sources such as the Department of Energy, the Environmental Protection Agency, and more to confer time series data about the price of gasoline over time, the average fuel economy of conventional vehicles, and other statistics inherent to conventional driving.
 ## Core
  3.  **Discover**
