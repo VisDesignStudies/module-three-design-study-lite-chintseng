@@ -93,20 +93,109 @@
                         </ul>
                         <li>Who is executing the task?</li>
                     </ul>  </li>
-                    <li>Task 2</li>
-                    <li>Task 3</li>
-                    <li>Task 4</li>
+                    <li>Task 2: Electric Cost over Time (Stability)
+                      <ul>
+                        <li>Why is a task pursued?</li>
+                        <ul>
+                          <li>Understand an alternative to gasoline.</li>
+                        </ul>
+                        
+                        <li>What does a task seek to learn about the data?</li>
+                        <ul>
+                          <li>See if the features of gasoline are also evident in the sales of electricity.</li>
+                        </ul>
+                        <li>Where does the task operate? </li>
+                        <ul>
+                          <li>CORDIS dataset for electricity price.</li>
+                        </ul>
+                        <li>When is the task performed?</li>
+                        <ul>
+                          <li>After, or in parallel to, Task 1</li>
+                        </ul>
+                        <li>Who is executing the task?</li>
+                      </ul>
+                    </li>
+                    <li>Task 3: Car Sales over Time (EV and Conventional)
+                      <ul>
+                        <li>Why is a task pursued?</li>
+                        <ul>
+                          <li>Understand the car sector.</li>
+                        </ul>
+                        <li>What does a task seek to learn about the data?</li>
+                        <ul>
+                          <li>The task is looking to understand trends in adoption rates for new modes of transportation. An alternative exists, are people accordingly switching over?</li>
+                        </ul>
+                        <li>Where does the task operate?</li>
+                        <ul>
+                          <li>Car sales data.</li>
+                        </ul>
+                        <li>When is the task performed?</li>
+                        <ul>
+                          <li>After Tasks 1 and 2. </li>
+                        </ul>
+                        <li>Who is executing the task?</li>
+                      </ul>
+                    </li>
+                    <li>Task 4: Current Cost of Car Usage per Mile by State for EV and Conventional
+                      <ul>
+                        <li>Why is a task pursued?</li>
+                        <ul>
+                          <li>The overarching capstone, to understand how energy relates to our modes of transportation. To understand how we, the individual, impact energy consumption with driving. 
+                          </li>
+                        </ul>
+                        <li>What does a task seek to learn about the data?</li>
+                        <ul>
+                          <li>Is it more price efficient and environmentally efficient to drive EV?
+                          </li>
+                        </ul>
+                        <li>Where does the task operate?</li>
+                        <ul>
+                          <li>EPA data for Fuel Economy.
+                          </li>
+                        </ul>
+                        <li>When is the task performed?</li>
+                        <ul>
+                          <li>At the end.
+                          </li>
+                        </ul>
+                        <li>Who is executing the task?</li>
+                      </ul>
+                    </li>
                   </ol> 
 
                 </p>
-                <p>3. Discover: Characterize your problem by identifying at least two tasks that you will want to conduct with your data. Enumerate the tasks using the 5Ws framework that we talked about in-class (see Lecture 16). Make sure to outline the process by which you were able to generate these specific tasks.   </p>
-                <p>4. Design: Create a low-fidelity prototype of a visualization designed to address these tasks. Add brief design justifications and discussions of the trade-offs of key design choices in the prototype. Make sure to include an image of the prototype in your write-up (note: since this is a low-fi prototype, sketches lacking real data are perfectly sufficient). </p>
-                <p>5. Implement: Implement your design as a more polished digital or physical data representation. You can use any tool of your choosing, but if you elect to use a WYSIWYG tool like Tableau or Excel, please incorporate design choices beyond the defaults provided by the tool. Note how you've implemented your solution, justify the resulting design based on your tasks, research on the problem space, and any formative investigations (see the discussion of the presentation below), and include at least one image of the visualization using real data in the write-up. Note that you can choose to pare down the dataset for simplicity if you'd like.</p>
-                <p>6. Deploy: Use your visualization with your target data to conduct the tasks you outlined in Step 3. Note your observations about the data gained through these tasks. </p>
-                <p>7. Iterate: Note at least one new task you'd conduct now that you've had a chance to investigate your dataset. Describe how you would change your solution to accommodate that task. You do not have to implement that change, but may do so for extra credit (see Bells & Whistles at the end of this document). </p>
+                <h6>4. Design:</h6>
+                <div class="row">
+                  <div class="col-6" style="height: 300px;">
+                    <img src="./asset/image/1.png" class="img-fluid" >
+                  </div>
+                  <div class="col-6"style="height: 300px;">
+                    <img src="./asset/image/2.png" class="img-fluid" >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6" style="height: 300px;">
+                    <img src="./asset/image/3.png" class="img-fluid" >
+                  </div>
+                  <div class="col-6"style="height: 300px;">
+                    <img src="./asset/image/4.png" class="img-fluid" >
+                  </div>
+                </div>
+                <h6>5. Implement:</h6>
+                <p>We decided to use D3.js as our data visualization tool because it provides the flexibility to provide dynamic properties for most of its functions and a very variable Interaction for users. Furthermore, we can embed visualization made by D3.js on web pages, which facilitates our use of real-time data and maintenance and update.
+                </p>
+                <h6>6. Deploy:</h6>
+                <p>For the visualization, we first present the line chart of commercial sector energy price and expenditure estimates for task 1. After understanding the commercial energy price, we build the bar chart for U.S. average retail price per kilowatt-hour in task 2. Task 3 shows the car sales by size and powertrain by using the pie chart and percent stacked column chart. We use map charts to show the electricity profiles in each state between 2019 and 2020. By knowing further the price difference between gasoline and electric cost for the car, we also applied the lollipop chart to show dollars cost per mile for electric vehicles and conventional cars.
+                </p>
+                <h6>7. Iterate:</h6>
+                <p>Building on what we accomplished with the visualizations we’ve already created, we can go further by factoring in the MSRP and variable maintenance costs of conventional versus electric vehicles. For instance, the MSRP of the 2022 Camry is $25,395 and the 2022 Camry Hybrid is $27,480. Nevertheless, while there is a tangible difference in this case, it is difficult to find a comparable alternative to a given EV or conventional car.</p>
                 <h4>Analysis</h4>
-                <p>8. Reflect, Pt 1: Describe what your solution tells you about your target problem. Note that you will do this with your domain expert hat on. What recommendations would you be able to provide on future policy directions and what historical patterns support those recommendations? Note that you may want to do a little digging into relevant data correlated with the patterns you observed (e.g., economic or socio-political events).</p>
-                <p>9. Reflect, Pt2: Describe what your solution tells you about designing visualizations for your target problem. Note that you will do this with your designer hat on.
+                <h6>8. Reflect, Pt 1:</h6>
+                <p>Supporting EV ventures for the future is a good path forward, due to the relatively low price per mile of driving. Car sales are trending in this direction, since EV sales are making up an increasingly larger portion of the marketshare. Moreover, volatility in the economy of gas prices can be explained by various events and milestones, such as the 2008 recession in particular. Nevertheless, regardless of inflection points in the past, it is evident that electric vehicles will provide a stable mode of transportation going forward.
+                </p>
+                <h6>9. Reflect, Pt2:</h6>
+                <p>Since our target problem is the transportation sector, it’s important to present the problem as a dichotomy. For our domain of interest, there are two different choices that car drivers can take (EV and Conventional) and we have to orient the kinds of data visualizations we use to reflect that. Although there are holistic aspects of the driving experience that cannot or should not extend the aforementioned dichotomy, the crux of the consumer transportation sector is between combustion engines (gasoline or diesel) and electric ones.
+                </p>
 
                 </p>
               </div>
