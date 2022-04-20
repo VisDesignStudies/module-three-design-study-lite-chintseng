@@ -1,5 +1,13 @@
 # Design study for energy
 
+## Our Website
+
+[https://design-study-energy.web.app/](https://design-study-energy.web.app/)
+
+(Sorry about forgotting to include the web url when first submiited!)
+
+(Feel free to route to our vis dashboard in the website)
+
 ## Precondition
  1. **Learning**
 At the 2018 United Nations Climate Change Conference, 15 year old climate change activist Greta Thunberg sent shockwaves around the world through her striking and scathing speech criticising the leaders of the world for their inaction towards global warming. Although global warming has been increasingly calamitous for the past few decades, Thunberg’s speech pushed us to evaluate our carbon footprint. In contemporary society, energy consumption is integrated into every mechanism of our lives: transportation, shelter, communication, commerce, and more, are all heavily influenced by our demand for energy.
